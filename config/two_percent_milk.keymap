@@ -16,6 +16,7 @@
             bindings = <
                 &kp X
                 &kp Z
+                &kp C
             >;
         };
     };
