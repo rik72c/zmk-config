@@ -40,12 +40,24 @@
             key-positions = <12 13>;
             layers = <4>;
         };
+
+        kp_enter {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
+
+        kp_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 12>;
+            layers = <1>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        colemak_dh {
             bindings = <
 &kp Q             &kp W       &kp F        &kp P         &kp B          &kp J      &kp L            &kp U        &kp Y            &kp SEMI
 &mt LEFT_SHIFT A  &mt LALT R  &mt LCTRL S  &mt LGUI T    &kp G          &kp M      &mt RGUI N       &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
@@ -54,12 +66,12 @@
             >;
         };
 
-        layer_1 {
+        numeric {
             bindings = <
-&trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &trans    &trans    &trans  &trans     &trans
-&trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans    &trans    &trans  &trans     &trans
-                                                   &trans           &trans    &trans    &trans
+&kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &trans    &trans    &trans  &trans     &trans
+&kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT      &trans    &trans    &trans  &trans     &trans
+                                                   &trans           &trans          &trans    &trans
             >;
         };
 
