@@ -21,6 +21,7 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <1 2>;
             layers = <4>;
+            timeout-ms = <200>;
         };
 
         alt+shift+tab {
@@ -62,7 +63,7 @@
 &kp Q             &kp W       &kp F        &kp P         &kp B          &kp J      &kp L            &kp U        &kp Y            &kp SEMI
 &mt LEFT_SHIFT A  &mt LALT R  &mt LCTRL S  &mt LGUI T    &kp G          &kp M      &mt RGUI N       &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
 &kp Z             &kp X       &kp C        &kp D         &kp V          &kp K      &kp H            &kp COMMA    &kp DOT          &kp FSLH
-                                           &lt 1 ESCAPE  &lt 4 ENTER    &kp SPACE  &lt 0 BACKSPACE
+                                           &lt 1 ESCAPE  &lt 4 ENTER    &kp SPACE  &lt 2 BACKSPACE
             >;
         };
 
