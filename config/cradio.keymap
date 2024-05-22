@@ -8,55 +8,14 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             layers = <0>;
-        };
-
-        alt+tab {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <1 2>;
-            layers = <4>;
-            timeout-ms = <200>;
-        };
-
-        alt+shift+tab {
-            bindings = <&kp LG(LS(TAB))>;
-            key-positions = <11 12>;
-            layers = <4>;
-        };
-
-        ctrl+tab {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <2 3>;
-            layers = <4>;
-        };
-
-        ctrl+shift+tab {
-            bindings = <&kp LC(LS(TAB))>;
-            key-positions = <12 13>;
-            layers = <4>;
-        };
-
-        kp_enter {
-            bindings = <&kp KP_ENTER>;
-            key-positions = <1 2>;
-            layers = <1>;
         };
 
         kp_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
             layers = <1>;
-        };
-
-        system_layer_right {
-            bindings = <&mo 5>;
-            key-positions = <32 33 29>;
-        };
-
-        system_layer_left {
-            bindings = <&mo 5>;
-            key-positions = <30 31 20>;
         };
     };
 
@@ -65,10 +24,10 @@
 
         colemak_dh {
             bindings = <
-&kp Q             &kp W       &kp F        &kp P         &kp B          &kp J      &kp L            &kp U        &kp Y            &kp SEMI
-&mt LEFT_SHIFT A  &mt LALT R  &mt LCTRL S  &mt LGUI T    &kp G          &kp M      &mt RGUI N       &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
-&kp Z             &kp X       &kp C        &kp D         &kp V          &kp K      &kp H            &kp COMMA    &kp DOT          &kp FSLH
-                                           &lt 1 ESCAPE  &lt 4 ENTER    &kp SPACE  &lt 2 BACKSPACE
+&kp Q             &kp W       &kp F  &kp P         &kp B          &kp J      &kp L            &kp U      &kp Y            &kp SEMI
+&mt LEFT_SHIFT A  &mt LALT R  &kp S  &mt LGUI T    &kp G          &kp M      &mt RGUI N       &kp E      &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
+&kp Z             &kp X       &kp C  &mt LCTRL D   &kp V          &kp K      &mt RCTRL H      &kp COMMA  &kp DOT          &kp FSLH
+                                     &lt 1 ESCAPE  &lt 4 ENTER    &kp SPACE  &lt 2 BACKSPACE
             >;
         };
 
@@ -110,8 +69,8 @@
 
         system {
             bindings = <
-&sys_reset   &trans  &trans  &trans      &trans    &bt BT_SEL 0  &trans  &trans  &trans  &sys_reset
-&bootloader  &trans  &trans  &trans      &trans    &trans        &trans  &trans  &trans  &bootloader
+&sys_reset   &trans  &trans  &trans      &trans    &bt BT_SEL 0  &trans  &trans  &trans  &soft_off
+&bootloader  &trans  &trans  &trans      &trans    &bt BT_SEL 1  &trans  &trans  &trans  &trans
 &trans       &trans  &trans  &bt BT_CLR  &trans    &trans        &trans  &trans  &trans  &trans
                              &trans      &trans    &trans        &trans
             >;
@@ -124,6 +83,11 @@
         function_layer {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+
+        system_layer {
+            if-layers = <1 2 4>;
+            then-layer = <5>;
         };
     };
 };
