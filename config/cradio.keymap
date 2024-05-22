@@ -22,6 +22,17 @@
             bindings = <&mo 5>;
             key-positions = <31 30 20>;
         };
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 4>;
+            layers = <5>;
+        };
+
+        reset {
+            bindings = <&sys_reset>;
+            key-positions = <1 0>;
+        };
     };
 
     keymap {
@@ -74,10 +85,10 @@
 
         system {
             bindings = <
-&sys_reset   &trans  &trans  &trans      &trans    &bt BT_SEL 0  &trans  &trans  &trans  &soft_off
-&bootloader  &trans  &trans  &trans      &trans    &bt BT_SEL 1  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &bt BT_CLR  &trans    &trans        &trans  &trans  &trans  &trans
-                             &trans      &trans    &trans        &trans
+&soft_off  &trans  &trans  &trans      &bt BT_SEL 0    &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &bt BT_CLR  &trans          &trans  &trans  &trans  &trans  &trans
+                           &trans      &trans          &trans  &trans
             >;
         };
     };
