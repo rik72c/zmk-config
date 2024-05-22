@@ -42,7 +42,7 @@
 &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &none     &none     &none   &none      &none
 &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
 &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT      &none     &none     &none   &none      &none
-                                                   &none            &none           &none     &none
+                                                   &trans           &trans          &trans    &trans
             >;
         };
 
@@ -51,7 +51,7 @@
 &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE      &none             &none            &none      &kp PLUS    &kp CARET    &kp ASTERISK  &kp EQUAL
 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp UNDERSCORE    &kp PIPE         &kp TILDE  &kp DOLLAR  &kp AT_SIGN  &kp PERCENT   &kp AMPERSAND
 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH    &none      &none       &none        &none         &none
-                                                            &none             &none            &none      &none
+                                                            &trans            &trans           &trans     &trans
             >;
         };
 
