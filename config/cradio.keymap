@@ -97,7 +97,7 @@
         };
 
         system_layer {
-            if-layers = <0 4>;
+            if-layers = <4 1>;
             then-layer = <5>;
         };
     };
