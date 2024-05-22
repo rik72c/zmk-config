@@ -17,6 +17,11 @@
             key-positions = <11 12>;
             layers = <1>;
         };
+
+        system_layer {
+            bindings = <&mo 5>;
+            key-positions = <31 30 20>;
+        };
     };
 
     keymap {
@@ -83,11 +88,6 @@
         function_layer {
             if-layers = <1 2>;
             then-layer = <3>;
-        };
-
-        system_layer {
-            if-layers = <1 2 4>;
-            then-layer = <5>;
         };
     };
 };
