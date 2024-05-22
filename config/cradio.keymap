@@ -48,8 +48,8 @@
 
         symbols {
             bindings = <
-&kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE      &none             &none            &none      &kp PLUS    &kp CARET    &kp ASTERISK  &kp EQUAL
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp UNDERSCORE    &kp PIPE         &kp TILDE  &kp DOLLAR  &kp AT_SIGN  &kp PERCENT   &kp AMPERSAND
+&kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE      &none             &none            &kp MINUS  &kp PLUS    &kp CARET    &kp ASTERISK  &kp EQUAL
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp APOS       &kp UNDERSCORE    &kp PIPE         &kp TILDE  &kp DOLLAR  &kp AT_SIGN  &kp PERCENT   &kp AMPERSAND
 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH    &none      &none       &none        &none         &none
                                                             &trans            &trans           &trans     &trans
             >;
