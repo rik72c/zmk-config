@@ -21,7 +21,6 @@
         bootloader {
             bindings = <&bootloader>;
             key-positions = <0 4>;
-            layers = <5>;
         };
 
         reset {
@@ -62,10 +61,10 @@
 
         function {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6   &kp F7  &kp F8  &kp F9  &kp F10
-&none   &none   &none   &none   &kp F11    &kp F12  &none   &none   &none   &none
-&none   &none   &none   &none   &none      &none    &none   &none   &none   &none
-                        &none   &none      &none    &none
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &kp F6      &kp F7  &kp F8  &kp F9        &kp F10
+&none   &none   &none   &none   &kp F11      &kp F12     &none   &none   &none         &none
+&none   &none   &none   &none   &soft_off    &bt BT_CLR  &none   &none   &bt BT_SEL 1  &bt BT_SEL 0
+                        &none   &none        &none       &none
             >;
         };
 
@@ -77,15 +76,6 @@
                                 &none        &none    &none  &none
             >;
         };
-
-        system {
-            bindings = <
-&soft_off  &none  &none  &none       &bt BT_SEL 0    &none  &none  &none  &none  &none
-&none      &none  &none  &none       &bt BT_SEL 1    &none  &none  &none  &none  &none
-&none      &none  &none  &bt BT_CLR  &none           &none  &none  &none  &none  &none
-                         &none       &none           &none  &none
-            >;
-        };
     };
 
     conditional_layers {
@@ -94,11 +84,6 @@
         function_layer {
             if-layers = <1 2>;
             then-layer = <3>;
-        };
-
-        system_layer {
-            if-layers = <4 1>;
-            then-layer = <5>;
         };
     };
 };
