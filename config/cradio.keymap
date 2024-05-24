@@ -17,30 +17,6 @@
             key-positions = <0 4>;
             layers = <3>;
         };
-
-        soft_off_left {
-            bindings = <&soft_off>;
-            key-positions = <20 4>;
-            layers = <0>;
-        };
-
-        soft_off_right {
-            bindings = <&soft_off>;
-            key-positions = <5 29>;
-            layers = <0>;
-        };
-
-        reset_left {
-            bindings = <&sys_reset>;
-            key-positions = <20 24>;
-            layers = <0>;
-        };
-
-        reset_right {
-            bindings = <&sys_reset>;
-            key-positions = <25 29>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -81,7 +57,7 @@
 &kp Q             &kp W       &kp F  &kp P         &kp B        &kp J      &kp L            &kp U      &kp Y            &kp SEMI
 &mt LEFT_SHIFT A  &mt LALT R  &kp S  &mt LGUI T    &kp G        &kp M      &mt RGUI N       &kp E      &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
 &kp Z             &kp X       &kp C  &mt LCTRL D   &kp V        &kp K      &mt RCTRL H      &kp COMMA  &kp DOT          &kp FSLH
-                                     &lt 1 ESCAPE  &kp ENTER    &kp SPACE  &lt 2 BACKSPACE
+                                     &lt 2 ESCAPE  &kp ENTER    &kp SPACE  &lt 1 BACKSPACE
             >;
         };
 
