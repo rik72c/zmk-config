@@ -23,6 +23,18 @@
             key-positions = <0 4>;
             layers = <3>;
         };
+
+        soft_off_left {
+            bindings = <&soft_off>;
+            key-positions = <20 4>;
+            layers = <0>;
+        };
+
+        soft_off_right {
+            bindings = <&soft_off>;
+            key-positions = <5 29>;
+            layers = <0>;
+        };
     };
 
     macros {
