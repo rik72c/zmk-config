@@ -14,7 +14,7 @@
 
         bootloader {
             bindings = <&bootloader>;
-            key-positions = <0 4>;
+            key-positions = <0 4 31>;
             layers = <3>;
         };
     };
@@ -64,8 +64,8 @@
         numeric {
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6       &kp N7       &kp N8        &kp N9        &kp N0
-&kp LEFT_SHIFT  &trans        &none         &trans        &none     &kp LEFT     &kp DOWN     &kp UP_ARROW  &kp RIGHT     &mt RIGHT_SHIFT LC(U)
-&none           &none         &none         &trans        &none     &vi_pm_left  &vi_pm_down  &vi_pm_up     &vi_pm_right  &kp LC(D)
+&kp LEFT_SHIFT  &trans        &none         &trans        &none     &kp LEFT     &kp DOWN     &kp UP_ARROW  &kp RIGHT     &kp RIGHT_SHIFT
+&none           &none         &none         &trans        &none     &vi_pm_left  &vi_pm_down  &vi_pm_up     &vi_pm_right  &trans
                                             &trans        &trans    &trans       &trans
             >;
         };
