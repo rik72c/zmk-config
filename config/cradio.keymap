@@ -12,12 +12,6 @@
             layers = <0>;
         };
 
-        kp_backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <11 12>;
-            layers = <1>;
-        };
-
         bootloader {
             bindings = <&bootloader>;
             key-positions = <0 4>;
@@ -33,6 +27,18 @@
         soft_off_right {
             bindings = <&soft_off>;
             key-positions = <5 29>;
+            layers = <0>;
+        };
+
+        reset_left {
+            bindings = <&sys_reset>;
+            key-positions = <20 24>;
+            layers = <0>;
+        };
+
+        reset_right {
+            bindings = <&sys_reset>;
+            key-positions = <25 29>;
             layers = <0>;
         };
     };
@@ -75,34 +81,34 @@
 &kp Q             &kp W       &kp F  &kp P         &kp B        &kp J      &kp L            &kp U      &kp Y            &kp SEMI
 &mt LEFT_SHIFT A  &mt LALT R  &kp S  &mt LGUI T    &kp G        &kp M      &mt RGUI N       &kp E      &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
 &kp Z             &kp X       &kp C  &mt LCTRL D   &kp V        &kp K      &mt RCTRL H      &kp COMMA  &kp DOT          &kp FSLH
-                                     &lt 1 ESCAPE  &kp ENTER    &kp SPACE  &lt 2 BACKSPACE
-            >;
-        };
-
-        numeric {
-            bindings = <
-&kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &none   &none        &vi_pm_up    &none         &none
-&kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &none   &vi_pm_left  &vi_pm_down  &vi_pm_right  &none
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT      &none   &none        &none        &none         &none
-                                                   &trans           &trans          &trans  &trans
+                                     &lt 2 ESCAPE  &kp ENTER    &kp SPACE  &lt 1 BACKSPACE
             >;
         };
 
         symbols {
             bindings = <
-&kp LEFT_BRACE        &kp LESS_THAN  &kp UP_ARROW    &kp GREATER_THAN  &kp RIGHT_BRACE          &kp BACKSLASH  &kp MINUS   &kp UNDER          &kp ASTERISK  &kp PLUS
-&kp LEFT_PARENTHESIS  &kp LEFT       &kp DOWN_ARROW  &kp RIGHT         &kp RIGHT_PARENTHESIS    &kp EXCL       &kp APOS    &kp DOUBLE_QUOTES  &kp GRAVE     &kp EQUAL
-&kp LEFT_BRACKET      &kp PAGE_DOWN  &kp PIPE        &kp PAGE_UP       &kp RIGHT_BRACKET        &kp TILDE      &kp DOLLAR  &kp AT             &kp PERCENT   &kp AMPS
-                                                     &trans            &trans                   &trans         &trans
+&kp LEFT_BRACE        &kp LESS_THAN   &kp GREATER_THAN   &kp RIGHT_BRACE        &kp TILDE    &kp CARET  &kp PERCENT      &kp UNDER         &kp ASTERISK   &kp PLUS
+&kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &none        &none      &kp EXCLAMATION  &kp SINGLE_QUOTE  &kp MINUS      &kp EQUAL
+&kp LEFT_BRACKET      &kp BACKSLASH   &kp PIPE           &kp RIGHT_BRACKET      &none        &none      &kp DOLLAR       &kp AT            &kp AMPERSAND  &trans
+                                                         &trans                 &trans       &trans     &trans
+            >;
+        };
+
+        numeric {
+            bindings = <
+&kp LC(E)  &kp LC(D)  &kp UP_ARROW  &kp LC(U)  &kp LC(Y)    &none   &none        &vi_pm_up    &none         &none
+&none      &kp LEFT   &kp DOWN      &kp RIGHT  &none        &none   &vi_pm_left  &vi_pm_down  &vi_pm_right  &none
+&kp N1     &kp N2     &kp N3        &kp N4     &kp N5       &kp N6  &kp N7       &kp N8       &kp N9        &kp N0
+                                    &trans     &trans       &trans  &trans
             >;
         };
 
         function {
             bindings = <
-&kp F1     &kp F2  &kp F3  &kp F4      &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-&soft_off  &none   &none   &none       &kp F11           &kp F12       &none         &none         &none         &soft_off
-&none      &none   &none   &bt BT_CLR  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                           &none       &none             &none         &none
+&kp F1  &kp F2  &kp F3  &kp F4      &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&none   &none   &none   &none       &kp F11           &kp F12       &none         &none         &none         &none
+&none   &none   &none   &bt BT_CLR  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                        &none       &none             &none         &none
             >;
         };
     };
@@ -111,7 +117,7 @@
         compatible = "zmk,conditional-layers";
 
         function_layer {
-            if-layers = <1 2>;
+            if-layers = <2 1>;
             then-layer = <3>;
         };
     };
