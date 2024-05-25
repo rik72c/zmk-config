@@ -58,19 +58,19 @@
 
         colemak_dh {
             bindings = <
-&kp Q             &kp W       &kp F  &kp P        &kp B          &kp J        &kp L          &kp U      &kp Y            &kp SEMI
-&mt LEFT_SHIFT A  &mt LALT R  &kp S  &mt LGUI T   &kp G          &kp M        &mt RGUI N     &kp E      &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
-&kp Z             &kp X       &kp C  &mt LCTRL D  &kp V          &kp K        &mt RCTRL H    &kp COMMA  &kp DOT          &kp FSLH
-                                     &kp TAB      &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
+&kp Q             &kp W       &kp F  &kp P        &kp B        &kp J      &kp L            &kp U      &kp Y            &kp SEMI
+&mt LEFT_SHIFT A  &mt LALT R  &kp S  &mt LGUI T   &kp G        &kp M      &mt RGUI N       &kp E      &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
+&kp Z             &kp X       &kp C  &mt LCTRL D  &kp V        &kp K      &mt RCTRL H      &kp COMMA  &kp DOT          &kp FSLH
+                                     &lt 2 TAB    &kp ENTER    &kp SPACE  &lt 1 BACKSPACE
             >;
         };
 
         numeric {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6       &kp N7       &kp N8        &kp N9        &kp N0
-&kp LEFT_SHIFT  &trans        &none         &trans        &none     &kp LEFT     &kp DOWN     &kp UP_ARROW  &kp RIGHT     &kp RIGHT_SHIFT
-&none           &none         &none         &trans        &none     &vi_pm_left  &vi_pm_down  &vi_pm_up     &vi_pm_right  &trans
-                                            &trans        &trans    &trans       &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &none        &kp LC(D)    &kp LC(U)     &kp LC(O)     &kp LC(I)
+&kp N6        &kp N7        &kp N8        &kp N9        &kp N0    &kp LEFT     &kp DOWN     &kp UP_ARROW  &kp RIGHT     &kp RIGHT_SHIFT
+&none         &none         &none         &trans        &none     &vi_pm_left  &vi_pm_down  &vi_pm_up     &vi_pm_right  &trans
+                                          &trans        &trans    &trans       &trans
             >;
         };
 
@@ -85,10 +85,10 @@
 
         function {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4      &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-&none   &none   &none   &none       &kp F11           &kp F12       &none         &none         &none         &none
-&none   &none   &none   &bt BT_CLR  &bt BT_CLR_ALL    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                        &none       &none             &none         &none
+&kp F1          &kp F2  &kp F3  &kp F4  &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&none           &none   &none   &none   &kp F11       &kp F12       &none         &none         &none         &none
+&bt BT_CLR_ALL  &none   &none   &none   &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                &none   &none         &none         &none
             >;
         };
     };
