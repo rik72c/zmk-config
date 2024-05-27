@@ -17,8 +17,8 @@
             key-positions = <0 4 20 24>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
+        vi_command {
+            bindings = <&kp COLON>;
             key-positions = <30 33>;
         };
 
