@@ -63,6 +63,13 @@
             bindings = <&kp LC(W) &kp W>;
             label = "VI_SWITCH_WINDOW";
         };
+
+        tmux_switcher: tmux_switcher {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp S>;
+            label = "TMUX_SWITCHER";
+        };
     };
 
     keymap {
@@ -81,7 +88,7 @@
             bindings = <
 &kp LEFT_BRACE        &kp LESS_THAN   &kp GREATER_THAN  &kp RIGHT_BRACE        &none     &vi_switch_window  &kp LC(U)  &kp UP_ARROW  &kp LC(D)  &none
 &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp MINUS         &kp RIGHT_PARENTHESIS  &none     &none              &kp LEFT   &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
-&kp LEFT_BRACKET      &kp BACKSLASH   &kp PIPE          &kp RIGHT_BRACKET      &none     &none              &none      &none         &none      &trans
+&kp LEFT_BRACKET      &kp BACKSLASH   &kp PIPE          &kp RIGHT_BRACKET      &none     &tmux_switcher     &none      &none         &none      &trans
                                                         &trans                 &trans    &trans             &trans
             >;
         };
