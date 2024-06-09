@@ -80,16 +80,16 @@
 &kp Q             &kp W       &kp F  &kp P        &kp B          &kp J        &kp L          &kp U      &kp Y            &kp SEMI
 &mt LEFT_SHIFT A  &mt LALT R  &kp S  &mt LGUI T   &kp G          &kp M        &mt RGUI N     &kp E      &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
 &kp Z             &kp X       &kp C  &mt LCTRL D  &kp V          &kp K        &mt RCTRL H    &kp COMMA  &kp DOT          &kp FSLH
-                                     &kp TAB      &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
+                                     &kp ESCAPE   &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
             >;
         };
 
         navigation {
             bindings = <
-&kp LEFT_BRACE        &kp LESS_THAN   &kp GREATER_THAN  &kp RIGHT_BRACE        &none     &vi_switch_window  &kp LC(U)  &kp UP_ARROW  &kp LC(D)  &none
-&kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp MINUS         &kp RIGHT_PARENTHESIS  &none     &none              &kp LEFT   &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
-&kp LEFT_BRACKET      &kp BACKSLASH   &kp PIPE          &kp RIGHT_BRACKET      &none     &tmux_switcher     &none      &none         &none      &trans
-                                                        &trans                 &trans    &trans             &trans
+&kp LEFT_BRACE        &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_BRACE        &none     &vi_switch_window  &kp LC(U)  &kp UP_ARROW  &kp LC(D)  &none
+&kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp MINUS         &kp RIGHT_PARENTHESIS  &none     &none              &kp LEFT   &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
+&kp LEFT_BRACKET      &kp PIPE       &kp UNDERSCORE    &kp RIGHT_BRACKET      &none     &tmux_switcher     &none      &none         &none      &trans
+                                                       &trans                 &trans    &trans             &trans
             >;
         };
 
