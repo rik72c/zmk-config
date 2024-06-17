@@ -95,10 +95,10 @@
 
         numeric {
             bindings = <
-&none   &kp N7  &kp N8  &kp N9  &none     &kp CARET     &kp HASH         &kp AT      &kp AMPERSAND      &kp TILDE
-&none   &kp N4  &kp N5  &kp N6  &none     &kp PLUS      &kp APOS         &kp DOLLAR  &kp DOUBLE_QUOTES  &kp EQUAL
-&kp N0  &kp N1  &kp N2  &kp N3  &none     &kp ASTERISK  &kp EXCLAMATION  &kp GRAVE   &kp PERCENT        &kp SLASH
-                        &trans  &trans    &trans        &trans
+&kp PLUS    &kp N7  &kp N8  &kp N9     &kp MINUS       &kp CARET     &kp HASH         &kp AT      &kp AMPERSAND      &kp TILDE
+&kp N0      &kp N4  &kp N5  &kp N6     &kp ASTERISK    &kp PLUS      &kp APOS         &kp DOLLAR  &kp DOUBLE_QUOTES  &kp EQUAL
+&kp PERIOD  &kp N1  &kp N2  &kp N3     &kp SLASH       &kp ASTERISK  &kp EXCLAMATION  &kp GRAVE   &kp PERCENT        &kp SLASH
+                            &kp EQUAL  &trans          &trans        &trans
             >;
         };
 
@@ -113,10 +113,10 @@
 
         system {
             bindings = <
-&sys_reset    &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &trans  &trans        &trans  &trans  &trans  &trans  &trans
-                                          &trans  &trans        &trans  &trans
+&sys_reset    &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &bt BT_CLR      &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
+                                          &trans        &trans          &trans  &trans
             >;
         };
     };
