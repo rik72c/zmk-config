@@ -67,15 +67,27 @@
         };
     };
 
+    behaviors {
+        quick_mt: quick_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUICK_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <2000>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         colemak_dh {
             bindings = <
-&kp Q             &kp W       &kp F  &kp P        &kp B          &kp J        &kp L          &kp U      &kp Y            &kp SEMI
-&mt LEFT_SHIFT A  &mt LALT R  &kp S  &mt LGUI T   &kp G          &kp M        &mt RGUI N     &kp E      &mt RIGHT_ALT I  &mt RIGHT_SHIFT O
-&kp Z             &kp X       &kp C  &mt LCTRL D  &kp V          &kp K        &mt RCTRL H    &kp COMMA  &kp DOT          &kp FSLH
-                                     &kp ESCAPE   &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
+&kp Q             &kp W             &kp F  &kp P        &kp B          &kp J        &kp L          &kp U      &kp Y                  &kp SEMI
+&mt LEFT_SHIFT A  &quick_mt LALT R  &kp S  &mt LGUI T   &kp G          &kp M        &mt RGUI N     &kp E      &quick_mt RIGHT_ALT I  &mt RIGHT_SHIFT O
+&kp Z             &kp X             &kp C  &mt LCTRL D  &kp V          &kp K        &mt RCTRL H    &kp COMMA  &kp DOT                &kp FSLH
+                                           &kp ESCAPE   &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
             >;
         };
 
