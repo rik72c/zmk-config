@@ -65,6 +65,13 @@
             bindings = <&kp LC(B) &kp S>;
             label = "TMUX_SWITCHER";
         };
+
+        vi_gd: vi_gd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp D>;
+            label = "VI_GD";
+        };
     };
 
     behaviors {
@@ -93,7 +100,7 @@
 
         navigation {
             bindings = <
-&kp LEFT_BRACE        &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_BRACE        &none     &vi_switch_window  &kp LC(U)  &kp UP_ARROW  &kp LC(D)  &none
+&kp LEFT_BRACE        &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_BRACE        &none     &vi_switch_window  &kp LC(U)  &kp UP_ARROW  &kp LC(D)  &vi_gd
 &kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp MINUS         &kp RIGHT_PARENTHESIS  &none     &none              &kp LEFT   &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
 &kp LEFT_BRACKET      &kp PIPE       &kp UNDERSCORE    &kp RIGHT_BRACKET      &none     &tmux_switcher     &none      &none         &none      &trans
                                                        &trans                 &trans    &trans             &trans
