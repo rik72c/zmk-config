@@ -65,13 +65,6 @@
             bindings = <&kp LC(B) &kp S>;
             label = "TMUX_SWITCHER";
         };
-
-        kp_backtick: kp_backtick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE>;
-            label = "KP_BACKTICK";
-        };
     };
 
     behaviors {
