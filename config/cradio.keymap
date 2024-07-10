@@ -48,7 +48,7 @@
         vi_pm_right: vi_pm_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(H)>;
+            bindings = <&kp LC(L)>;
             label = "VI_PM_RIGHT";
         };
 
@@ -111,9 +111,9 @@
 
         function {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none        &vi_pm_up  &none         &none
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &vi_pm_left  &vi_pm_up  &vi_pm_right  &none
-&kp F11  &kp F12  &none   &none   &none      &none  &none        &none      &none         &none
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none        &vi_pm_up    &none         &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &vi_pm_left  &vi_pm_down  &vi_pm_right  &none
+&kp F11  &kp F12  &none   &none   &none      &none  &none        &none        &none         &none
                           &none   &none      &none  &none
             >;
         };
