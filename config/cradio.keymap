@@ -27,28 +27,28 @@
         vi_pm_down: vi_pm_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(W) &kp J>;
+            bindings = <&kp LC(J)>;
             label = "VI_PM_DOWN";
         };
 
         vi_pm_up: vi_pm_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(W) &kp K>;
+            bindings = <&kp LC(K)>;
             label = "VI_PM_UP";
         };
 
         vi_pm_left: vi_pm_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(W) &kp H>;
+            bindings = <&kp LC(H)>;
             label = "VI_PM_LEFT";
         };
 
         vi_pm_right: vi_pm_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(W) &kp L>;
+            bindings = <&kp LC(H)>;
             label = "VI_PM_RIGHT";
         };
 
