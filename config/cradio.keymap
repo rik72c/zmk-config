@@ -93,9 +93,9 @@
 
         navigation {
             bindings = <
-&kp FSLH     &kp N7  &kp N8  &kp N9  &kp MINUS       &vi_switch_window  &kp LC(U)  &kp UP_ARROW  &kp LC(D)  &none
-&kp PERCENT  &kp N4  &kp N5  &kp N6  &kp PLUS        &none              &kp LEFT   &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
-&kp DOT      &kp N1  &kp N2  &kp N3  &kp ASTERISK    &tmux_switcher     &none      &none         &none      &trans
+&kp FSLH     &kp N7  &kp N8  &kp N9  &kp MINUS       &vi_switch_window  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none
+&kp PERCENT  &kp N4  &kp N5  &kp N6  &kp PLUS        &none              &kp LEFT     &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
+&kp DOT      &kp N1  &kp N2  &kp N3  &kp ASTERISK    &tmux_switcher     &none        &none         &none          &trans
                              &kp N0  &kp EQUAL       &trans             &trans
             >;
         };
@@ -104,17 +104,17 @@
             bindings = <
 &kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET    &kp AMPERSAND  &kp ASTERISK  &kp LPAR          &kp RPAR           &kp MINUS
 &kp EXCLAMATION  &none     &none       &none        &none        &none          &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
-&kp GRAVE        &none     &none       &none        &none        &none          &none         &kp LESS_THAN     &kp DOUBLE_QUOTES  &kp EQUAL
+&kp GRAVE        &none     &none       &none        &none        &none          &none         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL
                                        &none        &trans       &trans         &trans
             >;
         };
 
         function {
             bindings = <
-&none  &none  &none  &none  &none    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&none  &none  &none  &none  &none    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&none  &none  &none  &none  &none    &kp F11  &kp F12  &none   &none   &none
-                     &none  &none    &none    &none
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none        &vi_pm_up  &none         &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &vi_pm_left  &vi_pm_up  &vi_pm_right  &none
+&kp F11  &kp F12  &none   &none   &none      &none  &none        &none      &none         &none
+                          &none   &none      &none  &none
             >;
         };
 
