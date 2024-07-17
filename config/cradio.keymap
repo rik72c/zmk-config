@@ -21,6 +21,18 @@
             bindings = <&mo 4>;
             key-positions = <30 31 4>;
         };
+
+        kp_double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 18>;
+            layers = <2>;
+        };
+
+        kp_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <8 9>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -59,10 +71,10 @@
             label = "VI_SWITCH_WINDOW";
         };
 
-        tmux_switcher: tmux_switcher {
+        tmux_leader: tmux_switcher {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp S>;
+            bindings = <&kp LC(A)>;
             label = "TMUX_SWITCHER";
         };
     };
@@ -95,7 +107,7 @@
             bindings = <
 &kp FSLH     &kp N7  &kp N8  &kp N9  &kp MINUS       &vi_switch_window  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none
 &kp PERCENT  &kp N4  &kp N5  &kp N6  &kp PLUS        &none              &kp LEFT     &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
-&kp DOT      &kp N1  &kp N2  &kp N3  &kp ASTERISK    &tmux_switcher     &none        &none         &none          &trans
+&kp DOT      &kp N1  &kp N2  &kp N3  &kp ASTERISK    &tmux_leader       &none        &none         &none          &trans
                              &kp N0  &kp EQUAL       &trans             &trans
             >;
         };
