@@ -103,21 +103,21 @@
             >;
         };
 
-        navigation {
+        right_hand_alt {
             bindings = <
-&kp FSLH     &kp N7  &kp N8  &kp N9  &kp MINUS       &vi_switch_window  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none
-&kp PERCENT  &kp N4  &kp N5  &kp N6  &kp PLUS        &none              &kp LEFT     &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
-&kp DOT      &kp N1  &kp N2  &kp N3  &kp ASTERISK    &tmux_leader       &none        &none         &none          &trans
-                             &kp N0  &kp EQUAL       &trans             &trans
+&kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LCTRL    &vi_switch_window  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none
+&kp EXCLAMATION  &none     &none       &none        &none        &none              &kp LEFT     &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
+&kp GRAVE        &none     &none       &none        &none        &tmux_leader       &none        &none         &none          &trans
+                                       &trans       &trans       &trans             &trans
             >;
         };
 
-        symbols {
+        left_hand_alt {
             bindings = <
-&kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET    &kp AMPERSAND  &kp ASTERISK  &kp LPAR          &kp RPAR           &kp MINUS
-&kp EXCLAMATION  &none     &none       &none        &none        &none          &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
-&kp GRAVE        &none     &none       &none        &none        &none          &none         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL
-                                       &none        &trans       &trans         &trans
+&none   &kp N7  &kp N8  &kp N9  &none      &kp AMPERSAND  &kp ASTERISK  &kp LPAR          &kp RPAR           &kp MINUS
+&none   &kp N4  &kp N5  &kp N6  &none      &none          &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
+&kp N0  &kp N1  &kp N2  &kp N3  &kp DOT    &none          &none         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL
+                        &trans  &trans     &trans         &trans
             >;
         };
 
