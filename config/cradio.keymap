@@ -33,6 +33,11 @@
             key-positions = <8 9>;
             layers = <2>;
         };
+
+        right_hand_system {
+            bindings = <&mo 5>;
+            key-positions = <32 33 5>;
+        };
     };
 
     macros {
@@ -141,9 +146,9 @@
 
         system {
             bindings = <
-&sys_reset    &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &bt BT_CLR      &trans  &trans  &trans  &trans  &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
+&soft_off     &sys_reset    &trans        &trans        &trans          &trans  &trans  &trans  &sys_reset  &soft_off
+&trans        &trans        &trans        &trans        &bt BT_CLR      &trans  &trans  &trans  &trans      &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans      &trans
                                           &trans        &trans          &trans  &trans
             >;
         };
