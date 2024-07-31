@@ -33,11 +33,6 @@
             key-positions = <8 9>;
             layers = <4>;
         };
-
-        right_hand_system {
-            bindings = <&mo 5>;
-            key-positions = <32 33 5>;
-        };
     };
 
     macros {
