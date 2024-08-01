@@ -28,6 +28,11 @@
             key-positions = <8 9>;
             layers = <4>;
         };
+
+        system_layer {
+            bindings = <&mo 5>;
+            key-positions = <4 31 30>;
+        };
     };
 
     macros {
@@ -91,7 +96,7 @@
 
         colemak_dh {
             bindings = <
-&kp Q             &kp W  &kp F                 &kp P               &lt 5 B        &kp J        &kp L                &kp U                      &kp Y    &kp SEMICOLON
+&kp Q             &kp W  &kp F                 &kp P               &kp B          &kp J        &kp L                &kp U                      &kp Y    &kp SEMICOLON
 &mt LEFT_SHIFT A  &kp R  &kp S                 &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E                      &kp I    &mt RIGHT_SHIFT O
 &lt 4 Z           &kp X  &quick_mt LEFT_ALT C  &kp D               &kp V          &kp K        &kp H                &quick_mt RIGHT_ALT COMMA  &kp DOT  &lt 3 SLASH
                                                &mt LCTRL ESCAPE    &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
