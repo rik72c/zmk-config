@@ -29,9 +29,29 @@
             layers = <4>;
         };
 
-        system_layer {
-            bindings = <&mo 5>;
-            key-positions = <4 31 30>;
+        bt_clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <4 31 30 3>;
+        };
+
+        bt_clr_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <4 31 30 2>;
+        };
+
+        bt_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <4 31 30 20>;
+        };
+
+        bt_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <4 31 30 21>;
+        };
+
+        bt_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <4 31 30 22>;
         };
     };
 
@@ -136,15 +156,6 @@
 &kp LEFT_SHIFT  &none  &none  &none   &none     &none          &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
 &none           &none  &none  &none   &none     &none          &none         &kp LESS_THAN     &kp GREATER_THAN   &kp EQUAL
                               &trans  &trans    &trans         &trans
-            >;
-        };
-
-        system {
-            bindings = <
-&soft_off     &sys_reset    &trans        &trans          &none           &trans  &trans  &trans  &sys_reset  &soft_off
-&trans        &trans        &trans        &bt BT_CLR_ALL  &bt BT_CLR      &trans  &trans  &trans  &trans      &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &trans  &trans  &trans      &trans
-                                          &none           &none           &trans  &trans
             >;
         };
     };
