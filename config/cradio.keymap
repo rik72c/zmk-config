@@ -110,8 +110,8 @@
 
         colemak_dh {
             bindings = <
-&kp Q             &kp W  &kp F           &kp P               &kp B          &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON
-&mt LEFT_SHIFT A  &kp R  &kp S           &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &mt RIGHT_SHIFT O
+&kp Q             &kp W  &kp F           &kp P               &kp B          &kp J        &kp L                &kp U      &kp Y    &kp O
+&mt LEFT_SHIFT A  &kp R  &kp S           &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &mt RIGHT_SHIFT SEMICOLON
 &lt 4 Z           &kp X  &mt LEFT_ALT C  &kp D               &kp V          &kp K        &kp H                &kp COMMA  &kp DOT  &lt 3 SLASH
                                          &mt LCTRL ESCAPE    &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
             >;
