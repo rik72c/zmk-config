@@ -158,6 +158,15 @@
                               &trans  &trans    &trans         &trans
             >;
         };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_INC  &trans  &kp C_VOLUME_UP    &kp C_NEXT      &trans
+&trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_DEC  &trans  &kp C_VOLUME_DOWN  &kp C_PREVIOUS  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                &trans  &kp C_MUTE         &kp C_STOP      &trans
+                        &trans  &trans    &trans                &trans
+            >;
+        };
     };
 
     conditional_layers {
