@@ -4,7 +4,8 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <90>;
+    quick-tap-ms = <0>;
 };
 
 &lt {
@@ -150,10 +151,10 @@
 
         numeric {
             bindings = <
-&none           &kp N7  &kp N8  &kp N9  &none      &none   &none      &kp LC(K)  &none      &none
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &none      &none   &kp LC(H)  &kp LC(J)  &kp LC(L)  &none
-&kp N0          &kp N1  &kp N2  &kp N3  &kp DOT    &none   &none      &none      &none      &none
-                                &trans  &trans     &trans  &trans
+&kp N6      &kp N7  &kp N8  &kp N9  &kp N0    &none   &none      &kp LC(K)  &none      &none
+&kp N1      &kp N2  &kp N3  &kp N4  &kp N5    &none   &kp LC(H)  &kp LC(J)  &kp LC(L)  &none
+&kp KP_DOT  &none   &none   &none   &none     &none   &none      &none      &none      &none
+                            &trans  &trans    &trans  &trans
             >;
         };
 
@@ -177,7 +178,7 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_INC  &trans  &kp C_VOLUME_UP    &kp C_NEXT        &trans
+&trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_INC  &trans  &kp C_VOLUME_UP    &kp C_NEXT        &kp LA(LG(SPACE))
 &trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_DEC  &trans  &kp C_VOLUME_DOWN  &kp C_PREVIOUS    &trans
 &trans  &trans  &trans  &trans  &trans    &trans                &trans  &kp C_MUTE         &kp C_PLAY_PAUSE  &trans
                         &trans  &trans    &trans                &trans
