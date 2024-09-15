@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/34.h"
+// #include "zmk-helpers/key-labels/34.h"
 
 &lt {
     tapping-term-ms = <140>;
