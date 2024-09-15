@@ -5,6 +5,13 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/34.h"
 
+#define ___ &trans
+
+#define DEF 0
+#define NAV 1
+#define NUM 2
+#define GER 3
+
 &lt {
     tapping-term-ms = <140>;
     quick-tap-ms = <150>;
