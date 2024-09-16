@@ -19,15 +19,6 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
 
-// ZMK_HOLD_TAP(hml,
-//     flavor = "balanced";
-//     tapping-term-ms = <280>;
-//     require-prior-idle-ms = <150>;
-//     hold-trigger-key-positions = <KEYS_R THUMBS>;
-//     hold-trigger-on-release;
-//     bindings = <&kp>, <&kp>;
-// )
-
 &lt {
     tapping-term-ms = <140>;
     quick-tap-ms = <150>;
@@ -166,7 +157,7 @@
         colemak_dh {
             bindings = <
 &kp Q                    &kp W  &kp F           &kp P               &kp B          &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON
-&shift_tap LEFT_SHIFT A  &kp R  &kp S           &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &shift_tap RIGHT_SHIFT O
+&hml LEFT_SHIFT A        &kp R  &kp S           &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &shift_tap RIGHT_SHIFT O
 &lt 4 Z                  &kp X  &mt LEFT_ALT C  &kp D               &kp V          &kp K        &kp H                &kp COMMA  &kp DOT  &lt 3 SLASH
                                                 &mt LCTRL ESCAPE    &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
             >;
