@@ -11,7 +11,10 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
 
-&lt { tapping-term-ms = <90>; };
+&lt {
+    tapping-term-ms = <120>;
+    flavor = "balanced";
+};
 
 / {
     combos {
@@ -125,10 +128,21 @@
             bindings = <&kp MINUS>, <&kp UNDERSCORE>;
         };
 
-        shift_tap: shift_tap {
+        ht_mod: ht_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_TAP";
+            label = "HT_MOD";
             bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            flavor = "balanced";
+            retro-tap;
+        };
+
+        lt_mod: lt_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_MOD";
+            bindings = <&lt>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <50>;
@@ -142,10 +156,10 @@
 
         colemak_dh {
             bindings = <
-&kp Q                    &kp W  &kp F           &kp P               &kp B          &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON
-&shift_tap LEFT_SHIFT A  &kp R  &kp S           &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &shift_tap RIGHT_SHIFT O
-&lt 4 Z                  &kp X  &mt LEFT_ALT C  &kp D               &kp V          &kp K        &kp H                &kp COMMA  &kp DOT  &lt 3 SLASH
-                                                &mt LCTRL ESCAPE    &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
+&kp Q                 &kp W  &kp F           &kp P               &kp B          &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON
+&ht_mod LEFT_SHIFT A  &kp R  &kp S           &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &ht_mod RIGHT_SHIFT O
+&lt_mod 4 Z           &kp X  &mt LEFT_ALT C  &kp D               &kp V          &kp K        &kp H                &kp COMMA  &kp DOT  &lt_mod 3 SLASH
+                                             &mt LCTRL ESCAPE    &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
             >;
         };
 
