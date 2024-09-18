@@ -135,7 +135,7 @@
 &kp Q                 &kp W  &kp F               &kp P               &kp B          &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON
 &ht_mod LEFT_SHIFT A  &kp R  &kp S               &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &ht_mod RIGHT_SHIFT O
 &lt 4 Z               &kp X  &ht_mod LEFT_ALT C  &kp D               &kp V          &kp K        &kp H                &kp COMMA  &kp DOT  &lt 3 SLASH
-                                                 &mt LCTRL ESCAPE    &lt 3 ENTER    &lt 2 SPACE  &kp BACKSPACE
+                                                 &mt LCTRL ESCAPE    &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
             >;
         };
 
@@ -198,12 +198,12 @@
         compatible = "zmk,conditional-layers";
 
         function_layer {
-            if-layers = <2 3>;
+            if-layers = <1 2>;
             then-layer = <5>;
         };
 
         system_layer {
-            if-layers = <3 4>;
+            if-layers = <2 4>;
             then-layer = <6>;
         };
     };
