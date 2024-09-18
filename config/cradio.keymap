@@ -43,31 +43,6 @@
             key-positions = <8 9>;
             layers = <4>;
         };
-
-        bt_clr {
-            bindings = <&bt BT_CLR>;
-            key-positions = <4 31 30 3>;
-        };
-
-        bt_clr_all {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <4 31 30 2>;
-        };
-
-        bt_0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <4 31 30 20>;
-        };
-
-        bt_1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <4 31 30 21>;
-        };
-
-        bt_2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <4 31 30 22>;
-        };
     };
 
     macros {
@@ -160,7 +135,7 @@
 &kp Q                 &kp W  &kp F               &kp P               &kp B          &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON
 &ht_mod LEFT_SHIFT A  &kp R  &kp S               &mt LEFT_COMMAND T  &kp G          &kp M        &mt RIGHT_COMMAND N  &kp E      &kp I    &ht_mod RIGHT_SHIFT O
 &lt 4 Z               &kp X  &ht_mod LEFT_ALT C  &kp D               &kp V          &kp K        &kp H                &kp COMMA  &kp DOT  &lt 3 SLASH
-                                                 &mt LCTRL ESCAPE    &lt 2 ENTER    &lt 1 SPACE  &kp BACKSPACE
+                                                 &mt LCTRL ESCAPE    &lt 3 ENTER    &lt 2 SPACE  &kp BACKSPACE
             >;
         };
 
@@ -175,10 +150,10 @@
 
         numeric {
             bindings = <
-&none  &none  &none  &none   &none     &none   &kp N7  &kp N8  &kp N9  &none
-&none  &none  &none  &none   &none     &none   &kp N4  &kp N5  &kp N6  &none
-&none  &none  &none  &none   &none     &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT
-                     &trans  &trans    &trans  &trans
+&none      &none      &kp LC(K)  &none      &none     &none   &kp N7  &kp N8  &kp N9  &none
+&kp LC(A)  &kp LC(H)  &kp LC(J)  &kp LC(L)  &none     &none   &kp N4  &kp N5  &kp N6  &none
+&none      &none      &none      &none      &none     &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT
+                                 &trans     &trans    &trans  &trans
             >;
         };
 
@@ -200,12 +175,21 @@
             >;
         };
 
-        layer_5 {
+        functions {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_INC  &trans  &kp C_VOLUME_UP    &kp C_NEXT        &kp LA(LG(SPACE))
 &trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_DEC  &trans  &kp C_VOLUME_DOWN  &kp C_PREVIOUS    &trans
 &trans  &trans  &trans  &trans  &trans    &trans                &trans  &kp C_MUTE         &kp C_PLAY_PAUSE  &trans
                         &trans  &trans    &trans                &trans
+            >;
+        };
+
+        system {
+            bindings = <
+&trans        &trans        &bt BT_CLR_ALL  &bt BT_CLR    &trans          &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans          &trans        &trans          &trans  &trans  &trans  &trans  &trans
+                                            &trans        &trans          &trans  &trans
             >;
         };
     };
@@ -214,8 +198,13 @@
         compatible = "zmk,conditional-layers";
 
         function_layer {
-            if-layers = <1 2>;
+            if-layers = <2 3>;
             then-layer = <5>;
+        };
+
+        system_layer {
+            if-layers = <3 4>;
+            then-layer = <6>;
         };
     };
 };
