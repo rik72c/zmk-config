@@ -90,8 +90,8 @@
 
         left_symbol {
             bindings = <
-&kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET    &none   &none   &none  &none  &none
-&kp EXCLAMATION  &none     &none       &none        &none        &none   &none   &none  &none  &none
+&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET    &none   &none   &none  &none  &none
+&kp AT_SIGN      &none     &none       &none        &none        &none   &none   &none  &none  &none
 &kp GRAVE        &none     &none       &none        &none        &none   &none   &none  &none  &trans
                                        &trans       &trans       &trans  &trans
             >;
