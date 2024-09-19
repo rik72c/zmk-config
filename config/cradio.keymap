@@ -45,65 +45,7 @@
         };
     };
 
-    macros {
-        vi_pm_down: vi_pm_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(J)>;
-            label = "VI_PM_DOWN";
-        };
-
-        vi_pm_up: vi_pm_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(K)>;
-            label = "VI_PM_UP";
-        };
-
-        vi_pm_left: vi_pm_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(H)>;
-            label = "VI_PM_LEFT";
-        };
-
-        vi_pm_right: vi_pm_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(L)>;
-            label = "VI_PM_RIGHT";
-        };
-
-        vi_switch_window: vi_switch_window {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp LC(W) &kp W>;
-            label = "VI_SWITCH_WINDOW";
-        };
-
-        tmux_leader: tmux_switcher {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(A)>;
-            label = "TMUX_SWITCHER";
-        };
-    };
-
     behaviors {
-        multi_quotes: multi_quotes {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MULTI_QUOTES";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
-        };
-
-        multi_dash: multi_dash {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MULTI_DASH";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
-        };
-
         ht_mod: ht_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MOD";
@@ -111,18 +53,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <50>;
-            flavor = "balanced";
-            retro-tap;
-        };
-
-        lt_mod: lt_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_MOD";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             retro-tap;
         };
     };
@@ -141,10 +72,10 @@
 
         navigation {
             bindings = <
-&none  &kp F7  &kp F8  &kp F9  &kp F10    &vi_switch_window  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none
-&none  &kp F4  &kp F5  &kp F6  &kp F11    &none              &kp LEFT     &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
-&none  &kp F1  &kp F2  &kp F3  &kp F12    &tmux_leader       &none        &none         &none          &trans
-                       &trans  &trans     &trans             &trans
+&kp GLOBE  &kp F7  &kp F8  &kp F9  &kp F10    &none   &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none
+&none      &kp F4  &kp F5  &kp F6  &kp F11    &none   &kp LEFT     &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
+&none      &kp F1  &kp F2  &kp F3  &kp F12    &none   &none        &none         &none          &trans
+                           &trans  &trans     &trans  &trans
             >;
         };
 
@@ -159,18 +90,18 @@
 
         left_symbol {
             bindings = <
-&kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET    &none         &none   &none  &none  &none
-&kp EXCLAMATION  &none     &none       &none        &none        &none         &none   &none  &none  &none
-&kp GRAVE        &none     &none       &none        &none        &tmux_leader  &none   &none  &none  &trans
-                                       &trans       &trans       &trans        &trans
+&kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET    &none   &none   &none  &none  &none
+&kp EXCLAMATION  &none     &none       &none        &none        &none   &none   &none  &none  &none
+&kp GRAVE        &none     &none       &none        &none        &none   &none   &none  &none  &trans
+                                       &trans       &trans       &trans  &trans
             >;
         };
 
         right_symbol {
             bindings = <
-&none           &none  &none  &none   &none     &kp AMPERSAND  &kp ASTERISK  &kp LPAR          &kp RPAR           &multi_dash
-&kp LEFT_SHIFT  &none  &none  &none   &none     &kp BACKSLASH  &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &multi_quotes
-&none           &none  &none  &none   &none     &none          &none         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL
+&none  &none           &none  &none   &none     &kp AMPERSAND  &kp ASTERISK  &kp LPAR          &kp RPAR           &kp MINUS
+&none  &none           &none  &none   &none     &kp BACKSLASH  &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT
+&none  &kp LEFT_SHIFT  &none  &none   &none     &none          &none         &none             &none              &kp EQUAL
                               &trans  &trans    &trans         &trans
             >;
         };
