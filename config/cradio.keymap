@@ -1,4 +1,4 @@
-// #include "zmk-helpers/helper.h"
+#include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/34.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
