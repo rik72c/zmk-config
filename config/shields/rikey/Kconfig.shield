@@ -1,2 +1,0 @@
-config SHIELD_RIKEY
-    def_bool $(shield_list_contains, rikey)
