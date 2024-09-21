@@ -4,6 +4,7 @@
 
 #include "includes/settings.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
+#include "includes/combo.dtsi"
 
 / {
     behaviors {
