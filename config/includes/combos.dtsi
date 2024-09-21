@@ -1,0 +1,29 @@
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 4 20 24>;
+        };
+
+        kp_double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 18>;
+            layers = <4>;
+        };
+
+        kp_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <8 9>;
+            layers = <4>;
+        };
+    };
+};
