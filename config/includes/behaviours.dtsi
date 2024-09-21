@@ -1,0 +1,26 @@
+/ {
+    behaviors {
+        ht_mod: ht_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            flavor = "tap-preferred";
+            retro-tap;
+        };
+
+        alt_mod: alt_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALT_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <250>;
+            quick-tap-ms = <200>;
+        };
+    };
+}
