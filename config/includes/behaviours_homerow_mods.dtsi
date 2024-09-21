@@ -51,7 +51,7 @@
         // Positional Homerow mods for shift
         // Use faster tapping term and disable some features that may
         // cause false negatives.
-        hm_shift_l: hm_shift_l {
+        hm_s_l: hm_shift_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -65,7 +65,7 @@
             // hold-trigger-on-release;
         };
 
-        hm_shift_r: hm_shift_r {
+        hm_s_r: hm_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;

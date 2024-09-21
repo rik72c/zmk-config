@@ -1,3 +1,4 @@
+
 / {
     behaviors {
         ht_mod: ht_mod {
@@ -23,4 +24,4 @@
             quick-tap-ms = <200>;
         };
     };
-}
+};
