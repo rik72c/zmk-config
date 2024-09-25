@@ -1,37 +1,5 @@
 
 / {
     behaviors {
-    /*
-        * Timerless Layer Tap
-        *
-        * Works similarly timerless homerow mods. It activates the
-        * layer hold immediately for keys on the right side.
-        */
-        lt_l: layer_tap_left {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-			quick-tap-ms = <200>;
-
-            // Activate layer function immediately if a key on the right
-            // side of the keyboard is used.
-            hold-trigger-key-positions = <KEYS_R>;
-
-            bindings = <&mo>, <&kp>;
-        };
-
-        lt_r: layer_tap_right {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-			quick-tap-ms = <200>;
-
-            // Activate layer function immediately if a key on the left
-            // side of the keyboard is used.
-            hold-trigger-key-positions = <KEYS_L>;
-
-            bindings = <&mo>, <&kp>;
-        };
+    };
 };
