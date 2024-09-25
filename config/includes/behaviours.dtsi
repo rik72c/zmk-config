@@ -1,49 +1,37 @@
 
 / {
     behaviors {
-        ht_mod: ht_mod {
+    /*
+        * Timerless Layer Tap
+        *
+        * Works similarly timerless homerow mods. It activates the
+        * layer hold immediately for keys on the right side.
+        */
+        lt_l: layer_tap_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_MOD";
-            bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            flavor = "tap-preferred";
-            retro-tap;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+			quick-tap-ms = <200>;
+
+            // Activate layer function immediately if a key on the right
+            // side of the keyboard is used.
+            hold-trigger-key-positions = <KEYS_R>;
+
+            bindings = <&mo>, <&kp>;
         };
 
-        alt_mod: alt_mod {
+        lt_r: layer_tap_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "ALT_MOD";
-            bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <250>;
-            quick-tap-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+			quick-tap-ms = <200>;
+
+            // Activate layer function immediately if a key on the left
+            // side of the keyboard is used.
+            hold-trigger-key-positions = <KEYS_L>;
+
+            bindings = <&mo>, <&kp>;
         };
-
-        quick_lt: quick_lt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QUICK_LT";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            retro-tap;
-            quick-tap-ms = <100>;
-        };
-
-        quick_mt: quick_mt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QUICK_MT";
-            bindings = <&mt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            retro-tap;
-            quick-tap-ms = <100>;
-        };
-    };
 };

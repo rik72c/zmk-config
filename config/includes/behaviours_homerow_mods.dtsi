@@ -82,7 +82,7 @@
         hm_layer_l: hm_layer_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
@@ -96,7 +96,7 @@
         hm_layer_r: hm_layer_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
@@ -125,6 +125,17 @@
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <200>;
         };
+
+        hm_layer: homerow_mods_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <200>;
+        };
+
 
     };
 };
