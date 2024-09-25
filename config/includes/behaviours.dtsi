@@ -23,5 +23,27 @@
             require-prior-idle-ms = <250>;
             quick-tap-ms = <200>;
         };
+
+        quick_lt: quick_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUICK_LT";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            retro-tap;
+            quick-tap-ms = <100>;
+        };
+
+        quick_mt: quick_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUICK_MT";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            retro-tap;
+            quick-tap-ms = <100>;
+        };
     };
 };

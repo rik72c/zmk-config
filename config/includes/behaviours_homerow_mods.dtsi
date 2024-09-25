@@ -79,7 +79,7 @@
             // hold-trigger-on-release;
         };
 
-hm_layer_l: hm_layer_l {
+        hm_layer_l: hm_layer_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&lt>, <&kp>;
@@ -93,7 +93,7 @@ hm_layer_l: hm_layer_l {
             // hold-trigger-on-release;
         };
 
-hm_layer_r: hm_layer_r {
+        hm_layer_r: hm_layer_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&lt>, <&kp>;
