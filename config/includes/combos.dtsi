@@ -11,8 +11,8 @@
 
         kp_underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <RT2 RT3>
-            layers = <L_SYMBOL_LAYER>
+            key-positions = <RT2 RT3>;
+            layers = <L_SYMBOL_LAYER>;
         }
 
         kp_doublequote {
