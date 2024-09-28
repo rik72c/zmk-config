@@ -9,31 +9,20 @@
             layers = <0>;
         };
 
-        kp_underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <RT2 RT3>;
-            layers = <LSYM>;
-        };
-
-        kp_doublequote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <RM2 RM3>;
-            layers = <LSYM>;
-        };
-
         bootloader {
             bindings = <&bootloader>;
-            key-positions = <0 4 20 24>; };
+            key-positions = <0 4 20 24>;
+        };
 
-        kp_double_quote_a {
+        kp_double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 18>;
+            key-positions = <18 17>;
             layers = <4>;
         };
 
-        kp_underscore_a {
+        kp_underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             layers = <4>;
         };
     };
