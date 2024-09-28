@@ -25,13 +25,13 @@
             bindings = <&bootloader>;
             key-positions = <0 4 20 24>; };
 
-        kp_double_quote {
+        kp_double_quote_a {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <19 18>;
             layers = <4>;
         };
 
-        kp_underscore {
+        kp_underscore_a {
             bindings = <&kp UNDERSCORE>;
             key-positions = <8 9>;
             layers = <4>;
