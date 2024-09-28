@@ -14,6 +14,14 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define KEYS_T LH1 LH0 RH0 RH1
 
+#define BASE 0
+#define NAV 1
+#define NUM 2
+#define LSYM 3
+#define RSYM 4
+#define FUNC 5
+#define SYST 6
+
 /* Enable keymap features that require forks */
 #define HAS_UROB
 #define HAS_MOUSE_KEYS

@@ -12,13 +12,13 @@
         kp_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <RT2 RT3>;
-            layers = <L_SYMBOL_LAYER>;
+            layers = <LSYM>;
         }
 
         kp_doublequote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <RM2 RM3>;
-            layers = <L_SYMBOL_LAYER>;
+            layers = <LSYM>;
         }
 
         bootloader {
