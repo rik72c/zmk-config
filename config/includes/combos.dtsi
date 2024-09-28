@@ -9,10 +9,21 @@
             layers = <0>;
         };
 
+        kp_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <RT2 RT3>
+            layers = <L_SYMBOL_LAYER>
+        }
+
+        kp_doublequote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <RM2 RM3>;
+            layers = <L_SYMBOL_LAYER>;
+        }
+
         bootloader {
             bindings = <&bootloader>;
-            key-positions = <0 4 20 24>;
-        };
+            key-positions = <0 4 20 24>; };
 
         kp_double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
