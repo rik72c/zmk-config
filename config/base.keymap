@@ -18,7 +18,7 @@
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &hm_shift_l LEFT_SHIFT A &kp R  &kp S         &hm LEFT_COMMAND T  &kp G       &kp M         &hm RIGHT_COMMAND N  &kp E  &kp I         &hm_shift_r RIGHT_SHIFT O
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         &hm_layer_l 4 Z       &kp X         &hm LALT C       &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &hm_layer_r 3 SLASH
+         &hm_layer_l 4 Z  &hm_shift_l GLOBE X    &hm_shift_l LALT C    &kp D         &kp V             &kp K         &kp H         &hm_shift_r RALT COMMA     &hm_shift_r GLOBE DOT       &hm_layer_r 3 SLASH
      // ╰─────────────────────────────────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────────────────────────────────╯
                                                    &hm LCTRL ESCAPE &hm_layer 2 ENTER    &hm_layer 1 SPACE   &kp BACKSPACE
      //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
