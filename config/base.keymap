@@ -6,6 +6,7 @@
 #include "includes/behaviours_homerow_mods.dtsi"
 #include "includes/behaviours.dtsi"
 #include "includes/combos.dtsi"
+#include "includes/macros.dtsi"
 
 / {
     keymap {

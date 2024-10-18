@@ -1,0 +1,11 @@
+
+/ {
+macros {
+        tmux_menu: tmux_menu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp F12>;
+            label = "TMUX_MENU";
+        };
+    };
+};
