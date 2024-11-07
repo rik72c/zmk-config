@@ -126,7 +126,7 @@
             quick-tap-ms = <200>;
         };
 
-        hm_l: homerow_mods_layer {
+        hm_layer: homerow_mods_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
