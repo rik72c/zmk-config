@@ -3,7 +3,8 @@
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 150
 #define HM_PRIOR_IDLE 80
-#define SHIFT_PRIOR_IDLE 50
+#define SHIFT_PRIOR_IDLE 80
+#define SHIFT_QUICK_TAP 150
 
 / {
 
@@ -59,7 +60,7 @@
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <SHIFT_QUICK_TAP>;
             require-prior-idle-ms = <SHIFT_PRIOR_IDLE>;
 
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
@@ -73,7 +74,7 @@
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <SHIFT_QUICK_TAP>;
             require-prior-idle-ms = <SHIFT_PRIOR_IDLE>;
 
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
