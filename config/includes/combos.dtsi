@@ -4,6 +4,7 @@
         compatible = "zmk,combos";
 
         tab {
+            timeout-ms = <75>;
             bindings = <&kp TAB>;
             key-positions = <1 2>;
             layers = <0>;
