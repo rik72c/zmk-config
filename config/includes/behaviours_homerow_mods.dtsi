@@ -3,7 +3,10 @@
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 150
 #define HM_PRIOR_IDLE 80
-#define SHIFT_PRIOR_IDLE 80
+// long a key must be pressed to trigger the "hold" behavior
+#define SHIFT_TAPPING_TERM 15
+// Forces tap if key pressed within N ms of previous key (avoids accidental hold on fast typing)q;
+#define SHIFT_PRIOR_IDLE 50
 #define SHIFT_QUICK_TAP 150
 
 / {
