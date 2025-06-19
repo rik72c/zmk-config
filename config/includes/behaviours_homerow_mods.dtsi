@@ -3,9 +3,10 @@
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 150
 #define HM_PRIOR_IDLE 80
-// long a key must be pressed to trigger the "hold" behavior
-#define SHIFT_TAPPING_TERM 15
-// Forces tap if key pressed within N ms of previous key (avoids accidental hold on fast typing)q;
+
+// how long a key must be pressed to trigger the "hold" behavior
+#define SHIFT_TAPPING_TERM 150
+// Forces tap if key pressed within N ms of previous key (avoids accidental hold on fast typing)
 #define SHIFT_PRIOR_IDLE 50
 #define SHIFT_QUICK_TAP 150
 
@@ -62,7 +63,7 @@
             bindings = <&kp>, <&kp>;
 
             flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+            tapping-term-ms = <SHIFT_TAPPING_TERM>;
             quick-tap-ms = <SHIFT_QUICK_TAP>;
             require-prior-idle-ms = <SHIFT_PRIOR_IDLE>;
 
@@ -76,7 +77,7 @@
             bindings = <&kp>, <&kp>;
 
             flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+            tapping-term-ms = <SHIFT_TAPPING_TERM>;
             quick-tap-ms = <SHIFT_QUICK_TAP>;
             require-prior-idle-ms = <SHIFT_PRIOR_IDLE>;
 

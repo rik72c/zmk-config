@@ -72,9 +72,9 @@
         right_symbol {
             bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-         &none         &none         &none         &none         &none             &kp AMPERSAND &kp ASTERISK  &kp LPAR      &kp RPAR      &kp MINUS
+         &kp GRAVE     &kp TAB       &none         &none         &none             &kp AMPERSAND &kp ASTERISK  &kp LPAR      &kp RPAR      &kp MINUS
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         &trans        &none         &none         &none         &none             &kp BACKSLASH &none         &kp LBKT      &kp RBKT      &kp SQT
+         &trans        &none         &none         &trans        &none             &kp BACKSLASH &none         &kp LBKT      &kp RBKT      &kp SQT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &none         &none         &none         &none         &none             &kp PIPE      &kp EQUAL     &kp LBRC        &kp RBRC        &kp PLUS
      // ╰─────────────────────────────────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────────────────────────────────╯
