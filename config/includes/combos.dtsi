@@ -3,6 +3,20 @@
     combos {
         compatible = "zmk,combos";
 
+        tab {
+            timeout-ms = <100>;
+            bindings = <&kp TAB>;
+            key-positions = <LT1 LT2>;
+            layers = <0>;
+        };
+
+        grave {
+            timeout-ms = <100>;
+            bindings = <&kp GRAVE>;
+            key-positions = <LT0 LT1>;
+            layers = <0>;
+        };
+
         bootloader {
             bindings = <&bootloader>;
             key-positions = <0 4 20 24>;
