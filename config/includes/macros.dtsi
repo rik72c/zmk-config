@@ -15,5 +15,11 @@ macros {
             label = "TMUX_NAVIGATION";
         };
 
+        tmux_expand: tmux_expand {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp Z>;
+            label = "TMUX_EXPAND";
+        };
     };
 };
