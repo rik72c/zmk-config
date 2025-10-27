@@ -24,12 +24,14 @@ macros {
 
         tmux_split_v: tmux_split_v {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings = <&kp LC(A) &kp PERCENT>;
             label = "TMUX_SPLIT_V";
         };
 
         tmux_split_h: tmux_split_h {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings = <&kp LC(A) &kp DOUBLE_QUOTES>;
             label = "TMUX_SPLIT_H";
         };
