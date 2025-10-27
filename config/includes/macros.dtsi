@@ -21,5 +21,17 @@ macros {
             bindings = <&kp LC(A) &kp Z>;
             label = "TMUX_EXPAND";
         };
+
+        tmux_split_v: tmux_split_v {
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp LC(A) &kp PERCENT>;
+            label = "TMUX_SPLIT_V";
+        };
+
+        tmux_split_h: tmux_split_h {
+            compatible = "zmk,behavior-macro"
+            bindings = <&kp LC(A) &kp DOUBLE_QUOTES>;
+            label = "TMUX_SPLIT_H";
+        }
     };
 };
