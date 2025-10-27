@@ -29,9 +29,9 @@ macros {
         };
 
         tmux_split_h: tmux_split_h {
-            compatible = "zmk,behavior-macro"
+            compatible = "zmk,behavior-macro";
             bindings = <&kp LC(A) &kp DOUBLE_QUOTES>;
             label = "TMUX_SPLIT_H";
-        }
+        };
     };
 };
