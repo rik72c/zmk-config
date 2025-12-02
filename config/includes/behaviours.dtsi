@@ -1,12 +1,36 @@
 
 / {
     behaviors {
-            gui_tab: gui_tab {
+        gui_tab: gui_tab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             // tap alone  -> W
             // tap while Cmd held -> Tab (with Cmd kept)
             bindings = <&kp W>, <&kp TAB>;
+            // which modifiers trigger morph
+            mods = <(MOD_LGUI)>;
+            // IMPORTANT: keep Cmd so host sees Cmd+Tab, not just Tab
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+        gui_shift_tab: gui_shift_tab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            // tap alone  -> Q
+            // tap while Cmd held -> Tab (with Cmd kept)
+            bindings = <&kp Q>, <&kp LS(TAB)>;
+            // which modifiers trigger morph
+            mods = <(MOD_LGUI)>;
+            // IMPORTANT: keep Cmd so host sees Cmd+Tab, not just Tab
+            keep-mods = <(MOD_LGUI)>;
+        };
+
+            gui_tilde: gui_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            // tap alone  -> F
+            // tap while Cmd held -> Tilde (with Cmd kept)
+            bindings = <&kp F>, <&kp TILDE>;
             // which modifiers trigger morph
             mods = <(MOD_LGUI)>;
             // IMPORTANT: keep Cmd so host sees Cmd+Tab, not just Tab
