@@ -16,4 +16,14 @@
             gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         };
     };
+
+        / {
+    combos {
+        soft_off_waker_combo {
+            timeout-ms = <50>;
+            key-positions = <0 25>;
+            bindings = <&soft_off_waker>;
+        };
+    };
+};
 };

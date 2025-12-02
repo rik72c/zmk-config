@@ -6,16 +6,16 @@
         tab {
             timeout-ms = <100>;
             bindings = <&kp TAB>;
-            key-positions = <20 21>;
+            key-positions = <10 11>;
             layers = <0>;
         };
 
-        // grave {
-        //     timeout-ms = <100>;
-        //     bindings = <&kp GRAVE>;
-        //     key-positions = <0 1>;
-        //     layers = <0>;
-        // };
+        shift_tab{
+            timeout-ms = <100>;
+            bindings = <&kp LS(TAB)>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
 
         bootloader {
             bindings = <&bootloader>;
