@@ -3,12 +3,12 @@
     combos {
         compatible = "zmk,combos";
 
-        // tab {
-        //     timeout-ms = <100>;
-        //     bindings = <&kp TAB>;
-        //     key-positions = <1 2>;
-        //     layers = <0>;
-        // };
+        tab {
+            timeout-ms = <100>;
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
 
         // grave {
         //     timeout-ms = <100>;
