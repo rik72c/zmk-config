@@ -6,7 +6,7 @@
         tab {
             timeout-ms = <100>;
             bindings = <&kp TAB>;
-            key-positions = <1 2>;
+            key-positions = <20 21>;
             layers = <0>;
         };
 
