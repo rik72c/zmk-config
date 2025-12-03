@@ -6,13 +6,27 @@
         tab {
             timeout-ms = <100>;
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
         shift_tab{
             timeout-ms = <100>;
             bindings = <&kp LS(TAB)>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        tilde{
+            timeout-ms = <100>;
+            bindings = <&kp TILDE>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
+        shift_tilde{
+            timeout-ms = <100>;
+            bindings = <&kp LS(TILDE)>;
             key-positions = <20 21>;
             layers = <0>;
         };
