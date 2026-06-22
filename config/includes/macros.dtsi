@@ -52,7 +52,7 @@ macros {
         tmux_agents: tmux_agents {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp e>;
+            bindings = <&kp LC(A) &kp E>;
             label = "TMUX_AGENTS";
         };
     };
