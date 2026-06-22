@@ -46,8 +46,14 @@ macros {
         tmux_thumbs: tmux_thumbs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp LS(F)>;
+            bindings = <&kp LC(A) &kp LC(F)>;
             label = "TMUX_THUMBS";
+        };
+        tmux_agents: tmux_thumbs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp e>;
+            label = "TMUX_AGENTS";
         };
     };
 };
